@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="784.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatapplicationexample.Client1Controller">
+   <children>
+      <Label layoutX="322.0" layoutY="26.0" text="Client 01">
+         <font>
+            <Font name="Sitka Text Italic" size="34.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="client1TextArea" layoutX="42.0" layoutY="110.0" prefHeight="200.0" prefWidth="298.0" />
+      <TextArea fx:id="client1FileTextArea" layoutX="359.0" layoutY="110.0" prefHeight="200.0" prefWidth="392.0" />
+      <ImageView fx:id="client1ImageView" fitHeight="184.0" fitWidth="233.0" layoutX="493.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="client1TextFeild" layoutX="42.0" layoutY="366.0" prefHeight="25.0" prefWidth="261.0" />
+      <JFXButton layoutX="39.0" layoutY="415.0" onAction="#client1SendBtnOnAction" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: green;" text="Send" textFill="WHITE" />
+      <JFXButton layoutX="95.0" layoutY="415.0" onAction="#client1SendImageBtnOnAction" style="-fx-background-color: blue;" text="Send Image" textFill="WHITE" />
+      <JFXButton layoutX="182.0" layoutY="415.0" onAction="#client1SendFileOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: black;" text="Send File" textFill="WHITE" />
+      <TextField fx:id="client1UserName" layoutX="42.0" layoutY="465.0" prefHeight="25.0" prefWidth="261.0" promptText="User Name" />
+      <JFXButton layoutX="259.0" layoutY="415.0" onAction="#client1DisconnectFileOnAction" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: red;" text="Disconnect" textFill="WHITE" />
+   </children>
+</AnchorPane>

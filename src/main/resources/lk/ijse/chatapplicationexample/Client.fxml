@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="784.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatapplicationexample.ClientController">
+   <children>
+      <Label layoutX="349.0" layoutY="14.0" text="Client">
+         <font>
+            <Font name="Sitka Text Italic" size="34.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="clientTextArea" layoutX="43.0" layoutY="87.0" prefHeight="200.0" prefWidth="250.0" />
+      <TextField fx:id="clientTextFeild" layoutX="36.0" layoutY="329.0" prefHeight="25.0" prefWidth="265.0" />
+      <JFXButton layoutX="35.0" layoutY="371.0" onAction="#clientSendBtnOnAction" style="-fx-background-color: green;" text="Send" textFill="WHITE" />
+      <JFXButton layoutX="86.0" layoutY="371.0" onAction="#clientSendImageBtnOnAction" style="-fx-background-color: blue;" text="Send Image" textFill="WHITE" />
+      <JFXButton layoutX="172.0" layoutY="371.0" onAction="#clientSendFileBtnOnAction" style="-fx-background-color: black;" text="Send File" textFill="WHITE" />
+      <ImageView fx:id="clientImageView" fitHeight="200.0" fitWidth="242.0" layoutX="444.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="clientFileTextArea" layoutX="319.0" layoutY="87.0" prefHeight="200.0" prefWidth="443.0" />
+      <TextField fx:id="clientUserName" layoutX="36.0" layoutY="434.0" prefHeight="25.0" prefWidth="265.0" promptText="User Name" />
+      <JFXButton layoutX="242.0" layoutY="371.0" onAction="#clientDisconnectBtnOnAction" style="-fx-background-color: red;" text="Disconnect" textFill="WHITE" />
+   </children>
+</AnchorPane>
